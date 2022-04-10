@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 from pickle import TRUE
 
@@ -54,9 +56,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'PROJEKT.urls'
 
-import os
 
-os.path.join(BASE_DIR, 'templates')
+
+
 
 TEMPLATES = [
     {
@@ -73,6 +75,8 @@ TEMPLATES = [
         },
     },
 ]
+
+os.path.join(BASE_DIR, 'templates')
 
 WSGI_APPLICATION = 'PROJEKT.wsgi.application'
 
